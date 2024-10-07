@@ -184,9 +184,9 @@ function App() {
         >
           <Dialog>
             <Heading slot="title">Submited Value</Heading>
-            <p className="py-2 px-6 my-2 text-gray-600 bg-gray-100 rounded-sm max-h-[300px] text-[10px] overflow-auto">
-              <pre>{JSON.stringify(submitData, null, 2)}</pre>
-            </p>
+            <pre className="py-2 px-6 my-2 text-gray-600 bg-gray-100 rounded-sm max-h-[300px] text-[10px] overflow-auto">
+              {JSON.stringify(submitData, null, 2)}
+            </pre>
             <div className="text-right">
               <Button
                 className="text-[12px] bg-blue-400 text-white rounded-sm"
