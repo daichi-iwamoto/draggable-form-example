@@ -4,10 +4,9 @@ import {
   Controller,
   SubmitHandler,
 } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import Close from "@spectrum-icons/workflow/Close";
 import DragHandle from "@spectrum-icons/workflow/DragHandle";
-import { useDragAndDrop } from "react-aria-components";
-import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Button,
   FieldError,
@@ -21,6 +20,7 @@ import {
   ModalOverlay,
   Dialog,
   Heading,
+  useDragAndDrop,
 } from "react-aria-components";
 import z from "zod";
 import { useCallback, useEffect, useState } from "react";
